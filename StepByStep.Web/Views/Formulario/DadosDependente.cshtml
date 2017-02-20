@@ -1,0 +1,17 @@
+﻿@using StepByStep.Web.Helpers
+@using StepByStep.Web.Infra
+@model dynamic
+
+@{
+    ViewBag.Title = "Dados Dependente";
+}
+
+<div class="row bs-wizard">
+    @Html.ProgressBarPara(User.Identity.Name)
+</div>
+<h2>Dados Dependente</h2>
+
+@using (Html.BeginForm("DadosDependente", "Formulario", FormMethod.Post))
+{
+    <button type="submit" class="btn btn-default btn-primary">Enviar</button>
+}

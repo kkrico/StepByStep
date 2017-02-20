@@ -1,0 +1,14 @@
+﻿@using StepByStep.Web.Helpers
+
+@{
+    ViewBag.Title = "Confirmacao";
+}
+
+<div class="row bs-wizard">
+    @Html.ProgressBarPara(User.Identity.Name)
+</div>
+
+
+<h2>Confirmação</h2>
+<button type="button" class="btn btn-default btn-primary">Confirma!</button>
+

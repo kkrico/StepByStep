@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1>Cookie Criado com Sucesso!</h1>
+
+@using (Html.BeginForm("Index", "Cookie", FormMethod.Post))
+{
+    <input type="submit" value="Enviar" class="btn btn-default btn-primary" />
+}
+
